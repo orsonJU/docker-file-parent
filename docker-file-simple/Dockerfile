@@ -5,9 +5,9 @@ FROM openjdk:8-slim
 MAINTAINER orson.h.s.zhu
 
 # 将当前的springboot项目复制到/usr/local/目录下面
-COPY target/docker-file-simple-0.0.1-SNAPSHOT.jar /usr/local/
+COPY target/docker-file-simple-0.0.1-SNAPSHOT.jar /usr/local/docker-file-simple/
 
 # 运行项目
-CMD ["java", "-jar", "/usr/local/docker-file-simple-0.0.1-SNAPSHOT.jar"]
+CMD ["java", "-jar", "/usr/local/docker-file-simple/docker-file-simple-0.0.1-SNAPSHOT.jar"]
 
 
